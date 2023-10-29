@@ -3,7 +3,11 @@ import React, { useState } from 'react';
 
 
 function Grid() {
+<<<<<<< HEAD
   const [selectedColor, setSelectedColor] = useState('#ffffff');
+=======
+  const [selectedColor, setSelectedColor] = useState('#000000');
+>>>>>>> main
   const [grid, setGrid] = useState([[selectedColor]]);
 
   const handleColorChange = (color) => {
@@ -11,7 +15,11 @@ function Grid() {
   };
 
   const addRow = () => {
+<<<<<<< HEAD
     setGrid((prevGrid) => [...prevGrid, Array(prevGrid[0].length).fill('#ffffff')]);
+=======
+    setGrid((prevGrid) => [...prevGrid, Array(prevGrid[0].length).fill(selectedColor)]);
+>>>>>>> main
   };
 
   const removeRow = () => {
@@ -23,7 +31,11 @@ function Grid() {
   const addColumn = () => {
     setGrid((prevGrid) =>
       prevGrid.map((row) => {
+<<<<<<< HEAD
         return [...row, '#ffffff'];
+=======
+        return [...row, selectedColor];
+>>>>>>> main
       })
     );
   };
