@@ -1,0 +1,32 @@
+#colorWheelContainer {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: conic-gradient(red, yellow, green, cyan, blue, magenta, red);
+  cursor: pointer;
+}
+
+#selectedColor {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#gridTable {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border: 1px solid black;
+  text-align: center;
+  vertical-align: middle;
+}
