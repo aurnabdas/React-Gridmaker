@@ -61,9 +61,10 @@ function Grid() {
        } 
      }
     }
-    
+  
     setGrid(updatedGrid);
    };
+
   const updateColoredCells = () => {
    const updatedGrid = [...grid];
    for(let i = 0; i < updatedGrid.length; i++){
@@ -77,6 +78,7 @@ function Grid() {
    }
    setGrid(updatedGrid);
   }
+
 
   return (
     <div>

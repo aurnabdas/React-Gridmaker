@@ -1,32 +1,77 @@
-#colorWheelContainer {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background: conic-gradient(red, yellow, green, cyan, blue, magenta, red);
-  cursor: pointer;
+/* Reset some default styles */
+body, html, div, p, table {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
-#selectedColor {
-  margin-top: 10px;
-  font-weight: bold;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
 }
 
-.button-container {
+/* Grid Container Styles */
+div {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   margin-top: 20px;
 }
 
-#gridTable {
-  border-collapse: collapse;
-  margin: 0 auto;
+/* Color Selector Styles */
+input[type="color"] {
+  margin: 10px;
 }
 
+/* Button Container Styles */
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+/* Button Styles */
+button {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  flex-direction: row;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Grid Table Styles */
+table {
+  border-collapse: collapse;
+}
+
+table td {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+}
+
+/* Individual Cell Styles */
 .cell {
-  width: 50px;
-  height: 50px;
-  background-color: white;
-  border: 1px solid black;
-  text-align: center;
-  vertical-align: middle;
+  cursor: pointer;
+}
+
+/* Styling for Current Color */
+div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Styling for Selected Color */
+input[type="color"] {
+  margin-left: 10px;
 }
