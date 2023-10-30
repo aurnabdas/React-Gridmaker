@@ -64,6 +64,19 @@ function Grid() {
     
     setGrid(updatedGrid);
    };
+  const updateColoredCells = () => {
+   const updatedGrid = [...grid];
+   for(let i = 0; i < updatedGrid.length; i++){
+    for(let j = 0; j < updatedGrid[i].length; j++ ){
+      if(updatedGrid[i][j] === '#ffffff'){
+        updatedGrid[i][j] = '#ffffff';
+      }else{
+        updatedGrid[i][j] = selectedColor;
+      }
+    }
+   }
+   setGrid(updatedGrid);
+  }
 
   return (
     <div>
@@ -80,6 +93,7 @@ function Grid() {
       <button onClick={addColumn}>Add Column</button>
       <button onClick={removeColumn}>Remove Column</button>
       <button onClick={removeColor}>Remove Color</button>
+      <button onClick={updateColoredCells}>Update Colored Cells</button>
       
       <table>
         <tbody>
