@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/React-Gridmaker/static/css/main.253d4ed4.css",
+    "main.js": "/React-Gridmaker/static/js/main.479fcd88.js",
+    "index.html": "/React-Gridmaker/index.html",
+    "main.253d4ed4.css.map": "/React-Gridmaker/static/css/main.253d4ed4.css.map",
+    "main.479fcd88.js.map": "/React-Gridmaker/static/js/main.479fcd88.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.253d4ed4.css",
+    "static/js/main.479fcd88.js"
+  ]
+}
