@@ -1,5 +1,6 @@
 {
   "homepage": "http://aurnabdas.github.io/React-Gridmaker",
+  "name": "React-Gridmaker",
   "dependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
@@ -7,9 +8,9 @@
   },
   "main": "/index.js",
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "gh-pages": "^6.0.0"
   },
-  "name": "React-Gridmaker",
   "description": null,
   "version": "0.0.0",
   "scripts": {
