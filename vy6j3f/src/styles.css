@@ -11,15 +11,15 @@ body {
 }
 
 /* Grid Container Styles */
-div {
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
+  margin: 20px;
 }
 
 /* Color Selector Styles */
-input[type="color"] {
+.color-selector {
   margin: 10px;
 }
 
@@ -40,7 +40,7 @@ button {
   border: none;
   cursor: pointer;
   border-radius: 5px;
-  flex-direction: row;
+  font-size: 16px;
 }
 
 button:hover {
@@ -50,6 +50,7 @@ button:hover {
 /* Grid Table Styles */
 table {
   border-collapse: collapse;
+  margin-top: 20px;
 }
 
 table td {
@@ -64,14 +65,60 @@ table td {
 }
 
 /* Styling for Current Color */
-div {
+.current-color {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
   font-weight: bold;
+  font-size: 16px;
 }
 
 /* Styling for Selected Color */
-input[type="color"] {
+.selected-color {
   margin-left: 10px;
+}
+
+/* Additional Styling for Table Controls */
+.table-controls {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+/* Improved Spacing for Buttons */
+button + button {
+  margin-left: 10px;
+}
+
+/* Styling for Current Color Selector */
+.color-selector-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.color-selector-label {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.color-selector-input {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    margin: 10px;
+  }
+  .button-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
